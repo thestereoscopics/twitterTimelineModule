@@ -1,0 +1,301 @@
+/*css resets: thanks Eric Meyer*/
+.twitter-box div, .twitter-box span,
+.twitter-box h1, .twitter-box p,
+.twitter-box a, .twitter-box img,
+.twitter-box b, .twitter-box i,
+.twitter-box ol, .twitter-box ul,
+.twitter-box li, .twitter-box time, .twitter-box {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #66757F;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+.twitter-box ol, .twitter-box ul, .twitter-box li {
+    list-style: none;
+}
+/*specific styles*/
+body {
+    height: 800px;
+    max-height: calc(100% - 16px);
+}
+.twitter-box {
+    width: 100%;
+    border:1px solid #eeefef;
+    height: 710px;
+    padding: 20px 0 0;
+    max-height: 100%;
+}
+.twitter-box .twitter-box-body {
+    line-height: 1;
+    height: 646px;
+    max-height: calc(100% - 42px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+#headline, .twitter-box .twitter-box-body, .twitter-box #load-div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.twitter-box img.avatar, .twitter-box span, .twitter-box a, .twitter-box p {
+    display: inline-block;
+}
+.twitter-box .user-name, .twitter-box .image-tweet, .twitter-box .text-content, .twitter-box .footer {
+    margin: 0px 0 10px 12px;
+}
+.twitter-box .name-handle {
+    display: inline-block;
+    margin-left: 50px;
+}
+.twitter-box #headline {
+    border-bottom: 1px solid #eeefef;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+}
+.twitter-box #follow {
+    visibility: hidden;
+    float: right;
+}
+.twitter-box #follow.loaded {
+    visibility: visible;
+}
+.twitter-box #tweets-container {
+    max-height: 100%;
+    height: 100%;
+}
+.twitter-box .tweet {
+    border-top: 1px solid #eeefef;
+    padding: 20px 0 0;
+    position: relative;
+}
+.twitter-box .headline-text {
+    margin: 0 0 20px 10px;
+    max-width: 75%;
+}
+.twitter-box .headline-text,
+.twitter-box .user-name {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #292F33;
+}
+.twitter-box .author {
+    position: relative;
+}
+.twitter-box .profile span {
+    margin-right: 10px;
+}
+.twitter-box .avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+    position: absolute;
+}
+.twitter-box a.text-link:hover, .twitter-box .hashtag:hover,
+.twitter-box .twitter-handle-link:hover, .twitter-box .author:hover .user-name,
+.twitter-box .twitter-text-link:hover {
+    text-decoration: underline;
+}
+.twitter-box .twitter-handle {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    vertical-align: text-top;
+    color: #66757F;
+}
+.twitter-box .text-content {
+    font-family: lato, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+.twitter-box a.text-link {
+    color: #55ACEE;
+    margin-left: 5px;
+}
+.twitter-box .twitter-handle-link,
+.twitter-box .hashtag,
+.twitter-box .twitter-text-link {
+    color: #55ACEE;
+}
+.twitter-box .image-tweet {
+    width: 70%;
+    margin: 0 15% 10px;
+}
+.twitter-box .image-tweet a,
+.twitter-box .image-tweet img {
+    width: 100%;
+}
+.twitter-box .time-link time {
+    font-family: lato, sans-serif;
+    font-size: 12px;
+    color: #8899A6;
+}
+.twitter-box .tweet-action {
+    display: inline-block;
+    float: right;
+}
+.twitter-box .tweet-action li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.twitter-box li.tweet:hover .tweet-action li i {
+    display: inline-block;
+}
+.twitter-box .tweet-action li a {
+    width: 100%;
+    height: 100%;
+}
+.twitter-box i {
+    background: url(https://thismoment-a.akamaihd.net/assets/tm/uploads/196f174a262a9338cdf22b0441c2be60.png) no-repeat;
+}
+.twitter-box .profile .verified {
+    margin-right: 0px;
+}
+.twitter-box .verified-user.true {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-position: -163px -1px;
+    border-radius: 6px;
+    margin-bottom: -1px;
+    margin-right: 10px;
+}
+.twitter-box .favorite {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-position: -33px 0;
+}
+.twitter-box .reply {
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-position: 0 0;
+}
+.twitter-box .retweet {
+    display: none;
+    width: 20px;
+    height: 16px;
+    background-position: -79px 0;
+}
+.twitter-box #load-div {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.twitter-box #load-div.on-load {
+    position: absolute;
+    top: 50%;
+}
+.twitter-box #load-div.on-load #load-more {
+    display: none;
+}
+.twitter-box #load-more {
+    display: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #66757F;
+}
+.twitter-box .loading-tweets {
+    display: block;
+    bottom: 30px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+.twitter-box .follow {
+  top: 20px;
+  position: absolute;
+  right: 3px;
+}
+#sorry {
+    text-align: center;
+    background: none;
+    margin-top: 22px;
+}
+@media screen and (max-width: 767px) {
+    .twitter-box {
+        height: 710px;
+    }
+    .twitter-box .twitter-box-body {
+        height: 610px;
+        max-height: calc(100% - 51px);
+    }
+    .twitter-box.load .twitter-box-body {
+        height: 560px;
+        max-height: calc(100% - 126px);
+    }
+    .twitter-box .profile span {
+       margin-right: 0;
+    }
+    .twitter-box .twitter-handle {
+        margin: 0px 0 20px 10px;
+    }
+    .twitter-box .name-handle {
+        width: 75%;
+    }
+    .twitter-box .verified-user.true {
+        margin: 0 0 -4px 4px;
+    }
+    .twitter-box li.tweet .tweet-action li i {
+        display: inline-block;
+    }
+    .twitter-box .image-tweet, .text-content, .footer {
+        margin: 0 0 10px 0;
+    }
+    .twitter-box .image-tweet {
+        width: 100%;
+    }
+    .twitter-box .text-content,
+    .twitter-box .twitter-handle {
+        font-size: 14px;
+    }
+    .twitter-box .user-name {
+        font-size: 16px;
+    }
+    .twitter-box #load-more {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+        background: none;
+    }
+}
+@media screen and (max-width: 550px) {
+    .twitter-box .follow {
+        top: auto;
+        right: auto;
+        margin: 0 auto 20px;
+        width: 100%;
+        position: relative;
+        display: block;
+        text-align: center;
+    }
+    .twitter-box #follow {
+        float: none;
+        text-align: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        padding-bottom: 6px;
+    }
+    .twitter-box .headline-text {
+        max-width: 75%;
+        text-align: center;
+        height: 50px;
+        margin: auto;
+        display: block;
+    }
+}

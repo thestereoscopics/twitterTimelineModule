@@ -1,0 +1,61 @@
+<html>
+<head>
+    <!--[if IE 9]> <html class="ie ie9"> <![endif]-->
+    <title>TwitterModule</title>
+    <link id="page_favicon" href="../images/favicon.ico" rel="icon" type="image/x-icon">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/tweetboxoo.js"></script>
+    <link rel="stylesheet" type="../text/css" href="../css/tweets.css">
+
+</head>
+<body>
+    <div id="twitter-box" class="twitter-box">
+        <div id="headline">
+            <div id="follow"></div>
+        </div>
+        <div class="twitter-box-body">
+            <div id="tweets-container">
+                <!-- tweets go here -->
+            </div>
+        </div>
+        <div id="load-div" class="on-load"><img class="loading-tweets" src="../images/loading30.gif" alt="loading gif"/><p id="load-more"><br/>Load More</p>
+        </div>
+    </div>
+    <!-- <div id="options-container">
+      <ol> -->
+      <!-- 1 radio buttons user handle or hashtag - then form pops up option for either or with statement saying
+      hashtags need to be split by commas
+      2 images only or text only or both images and tweets
+      number Of Tweets Per Call
+      Mobile Width
+      Width For Medium Images
+      Width For Large Images
+      No Retweets
+      FollowButton
+      if searching for no retweets or no text or no images and number is the same it won't keep trying-->
+   <!--      <li>User Handle</li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </div> -->
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+</body>
+</html>
